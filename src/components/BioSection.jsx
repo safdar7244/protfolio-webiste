@@ -22,7 +22,7 @@ const BioSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              Your Name
+              Mohamed Safdar
             </motion.h2>
             <motion.p
               className="text-gray-600 text-2xl mb-6"
@@ -38,10 +38,17 @@ const BioSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id
-              justo ac turpis mollis euismod vitae eget quam. Nulla facilisi.
-              Phasellus at justo eget nunc dictum bibendum eget eu nulla.
+              A grounded and solution oriented software engineer with a passion
+              for learning new stuff.
             </motion.p>
+            <motion.button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-400 text-white px-6 py-3 rounded text-lg m-4"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              See Full Resume
+            </motion.button>
           </div>
         </div>
       </div>
