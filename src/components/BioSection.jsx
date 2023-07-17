@@ -7,9 +7,9 @@ const BioSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:mr-8 mb-8 md:mb-0">
-            <div className="rounded-full overflow-hidden h-40 w-40 md:h-64 md:w-64">
+            <div className="rounded-full overflow-hidden h-40 w-40 md:h-64 md:w-64 border-4 border-slate-400">
               <img
-                src="src\assets\keaton-smile-thumb-1686703104545.jpg"
+                src="src\assets\me.jpg"
                 alt="Profile Image"
                 className="w-full h-full object-cover"
               />

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useReducer, useState } from "react";
 import db from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
+
 const ContactSection = () => {
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -71,11 +72,9 @@ const ContactSection = () => {
     try {
       setIsLoading(true);
       const docRef = await addDoc(collection(db, "submissions"), submission);
-      console.log("Document written with ID: ", docRef.id);
       resetForm();
       setIsLoading(false);
     } catch (e) {
-      console.error("Error adding document: ", e);
       resetForm();
       setIsLoading(false);
       setErrors({ ...errors, server: e });

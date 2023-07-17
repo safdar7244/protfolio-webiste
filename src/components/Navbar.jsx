@@ -51,13 +51,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        {/* <motion.div
-            className="h-1 bg-blue-500 dark:bg-blue-400"
-            style={{ opacity }}
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.3 }}
-          /> */}
       </div>
     </nav>
   );
