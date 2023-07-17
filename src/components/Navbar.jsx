@@ -19,9 +19,9 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full bg-white backdrop-filter backdrop-blur-md bg-opacity-70 dark:bg-gray-900 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div>
+          {/* <div>
             <span className="text-lg font-bold">Your Logo</span>
-          </div>
+          </div> */}
           <div className="hidden md:block">
             <div className="ml-4 flex items-center space-x-4">
               <button

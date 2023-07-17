@@ -7,6 +7,8 @@ const ProjectCard = ({
   screenshot,
   sourceCodeLink,
   demoLink,
+  hasDemo,
+  hasSourceCode,
 }) => {
   return (
     <motion.div
@@ -15,14 +17,10 @@ const ProjectCard = ({
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <img
-        src={screenshot}
-        alt="Project Screenshot"
-        className="w-full h-auto"
-      />
+      <img src={screenshot} alt="Project Screenshot" className="w-auto h-96" />
       <div className="p-6">
         <h3 className="text-black text-3xl font-semibold mb-4">{name}</h3>
-        <p className="text-gray-600 mb-6">{description}</p>
+        <p className="text-gray-600 mb-6 text-xl">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((technology, index) => (
             <motion.button
@@ -36,22 +34,28 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="flex space-x-4 mt-auto">
-          <motion.a
-            href={sourceCodeLink}
-            className="text-white bg-gray-600 hover:bg-gray-500 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            Source Code
-          </motion.a>
-          <motion.a
-            href={demoLink}
-            className="text-white bg-gray-600 hover:bg-gray-500 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            Demo
-          </motion.a>
+          {hasSourceCode && (
+            <motion.a
+              href={sourceCodeLink}
+              className="text-white bg-gray-600 hover:bg-gray-500 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-300"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              target="_blank"
+            >
+              Source Code
+            </motion.a>
+          )}
+          {hasDemo && (
+            <motion.a
+              href={demoLink}
+              className="text-white bg-gray-600 hover:bg-gray-500 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-300"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              target="_blank"
+            >
+              Demo
+            </motion.a>
+          )}
         </div>
       </div>
     </motion.div>

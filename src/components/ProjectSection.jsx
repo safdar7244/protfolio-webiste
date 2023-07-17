@@ -5,48 +5,103 @@ import ProjectCard from "./ProjectCard";
 const ProjectSection = () => {
   const projects = [
     {
-      name: "Project A",
-      description: "Description of Project A",
-      technologies: ["Technology 1", "Technology 2"],
-      screenshot: "project-screenshot-a.png",
-      sourceCodeLink: "project-source-code-link-a",
-      demoLink: "project-demo-link-a",
+      name: "Kozgo",
+      description:
+        "Kozgo is a ride sharing app. Build the Web app for Kozgo along with the driver sign up flow.",
+      technologies: ["React", "Node", "Express", "MySQL"],
+      sourceCodeLink: "https://github.com/safdar7244/Kozgo",
+      demoLink: "http://www.kozgo.com/",
+      screenshot: "src/assets/screenshots/kozgo.png",
+      hasDemo: true,
+      hasSourceCode: true,
     },
     {
-      name: "Project B",
-      description: "Description of Project B",
+      name: "Open Stope",
+      description:
+        "A webapp that uses AI to accurately predict the stability if stope surfaces using AI.",
       technologies: [
-        "Technology 1",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
-        "Technology 2",
+        "Angular",
+        "Node",
+        "MySQL",
+        "Express",
+        "Django",
+        "Keras",
+        "TypeScript",
       ],
-      screenshot:
-        "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F08%2F17%2FM8DBATM_WB002.jpg",
-      sourceCodeLink: "project-source-code-link-b",
-      demoLink: "project-demo-link-b",
+      screenshot: "src/assets/screenshots/openstope.png",
+      sourceCodeLink: "https://github.com/safdar7244/Open-Stope",
+      demoLink: "https://openstope.com/",
+      hasDemo: true,
+      hasSourceCode: true,
     },
     {
-      name: "Project B",
-      description: "Description of Project B",
-      technologies: ["Technology 1", "Technology 2"],
-      screenshot:
-        "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F08%2F17%2FM8DBATM_WB002.jpg",
+      name: "Raw Admin App",
+      description:
+        "Raw is an exciting way to showcase creative content through short videos.It is a new video platform for content creators to share short videos. Built an admin app for Raw.",
+      technologies: ["React", "Node", "Firebase", "Express"],
+      screenshot: "src/assets/screenshots/raw.png",
+      sourceCodeLink: "https://github.com/safdar7244/raw-app_frontend",
+      demoLink: "https://play.google.com/store/apps/details?id=com.tnc.rawapp",
+      hasDemo: true,
+      hasSourceCode: true,
+    },
+    {
+      name: "Google Chat Bot",
+      description:
+        "A bot that reads messages from Google Chat and then sends it to Discord.",
+      technologies: ["Node", "Puppeteer", "Discord API"],
+      screenshot: "src/assets/screenshots/google-bot.jpg",
+      sourceCodeLink: "https://github.com/safdar7244/google_bot/",
+      demoLink: "project-demo-link-b",
+      hasDemo: false,
+      hasSourceCode: true,
+    },
+    {
+      name: "Home Parking",
+      description:
+        "A mobile App that lets users rent out their parking spaces to other users and earn money. Basically its the AirBnb for parking lots.",
+      technologies: [
+        "React Native",
+        "Firebase",
+        "Node",
+        "Google Maps API",
+        "Stripe",
+      ],
+      screenshot: "src/assets/screenshots/parking.jpeg",
+      sourceCodeLink: "https://github.com/safdar7244/Parking_App",
+      demoLink: "project-demo-link-b",
+      hasDemo: false,
+      hasSourceCode: true,
+    },
+    {
+      name: "Student On The Go",
+      description:
+        "An internal mobile app made for a Norwegian University, having the feature of group chat for the whole university, study materials and links to different courses.",
+      technologies: ["React Native", "Firebase", "Node"],
+      screenshot: "src/assets/screenshots/university-app.png",
+      sourceCodeLink: "https://github.com/safdar7244/School-on-Go",
+      demoLink: "project-demo-link-b",
+      hasSourceCode: true,
+    },
+    {
+      name: "Spotify Bot",
+      description:
+        "A bot that creates spotify accounts bypassing bot protection and CAPTCHAS.",
+      technologies: ["Node", "Puppeteer"],
+      screenshot: "src/assets/screenshots/spotify-bot.jpg",
+      sourceCodeLink: "https://github.com/safdar7244/Spotify_Bot/tree/main",
+      demoLink: "project-demo-link-b",
+      hasSourceCode: true,
+    },
+    {
+      name: "Random Chat App",
+      description: "A web app that lets two random users chat with each other.",
+      technologies: ["Node", "Firebase", "JQuery", "Socket IO"],
+      screenshot: "src/assets/screenshots/chat-app.png",
       sourceCodeLink: "project-source-code-link-b",
       demoLink: "project-demo-link-b",
+      hasSourceCode: false,
     },
-
-    // Add more projects as needed
   ];
 
   return (
@@ -58,7 +113,7 @@ const ProjectSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Projects
+          Few Recent Projects
         </motion.h2>
         <div className="grid gap-12 md:grid-cols-2">
           {projects.map((project, index) => (

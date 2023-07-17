@@ -6,7 +6,6 @@ const ExperienceCard = ({
   responsibilities,
   companyLogo,
 }) => {
-  console.log(companyLogo);
   return (
     <motion.div
       className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition duration-300"

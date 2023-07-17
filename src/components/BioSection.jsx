@@ -47,7 +47,9 @@ const BioSection = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              See Full Resume
+              <a href="src/assets/files/safdar.pdf" download>
+                See Full Resume
+              </a>
             </motion.button>
           </div>
         </div>
