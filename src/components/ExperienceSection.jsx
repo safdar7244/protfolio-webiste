@@ -1,6 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
+import ssiLogo from "../assets//ssi-logo.jpg";
+import tapsnclicksLogo from "../assets//tapsnclicks.png";
+import fiverLogo from "../assets//Fiverr-logo.png";
+import boost79Logo from "../assets//boost79.jpg";
+
 const ExperienceSection = () => {
   const experiences = [
     {
@@ -13,7 +18,7 @@ const ExperienceSection = () => {
         "Responsible for maintaining, enhancing and migrating internal frontend framework built on top of Angular",
         "Migrated the VMS app frontend from Angular version 10 to Angular version 15",
       ],
-      companyLogo: "src/assets/ssi-logo.jpg",
+      companyLogo: ssiLogo,
     },
     {
       company: "Boost79.hu",
@@ -24,7 +29,7 @@ const ExperienceSection = () => {
         "Responsible for designing archtitecture for multiple apps",
         "Responsible for optimizing and improving the backend architecture",
       ],
-      companyLogo: `src/assets/boost79.jpg`,
+      companyLogo: boost79Logo,
     },
     {
       company: "TapsNClicks",
@@ -34,7 +39,7 @@ const ExperienceSection = () => {
         "Responsible for developing an Admin app for a video sharing app",
         "Respnsible for continous deployments of the application",
       ],
-      companyLogo: `src/assets/tapsnclicks.png`,
+      companyLogo: tapsnclicksLogo,
     },
     {
       company: "Fiverr",
@@ -45,7 +50,7 @@ const ExperienceSection = () => {
         "50+ Projects completed",
         "40+ Perfect Reviews",
       ],
-      companyLogo: `src/assets/Fiverr-Logo.png`,
+      companyLogo: fiverLogo,
     },
   ];
 

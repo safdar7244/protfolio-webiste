@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import me from "../assets/me.jpg";
 
 const BioSection = () => {
   return (
@@ -9,7 +10,7 @@ const BioSection = () => {
           <div className="md:mr-8 mb-8 md:mb-0">
             <div className="rounded-full overflow-hidden h-40 w-40 md:h-64 md:w-64 border-4 border-slate-400">
               <img
-                src="src\assets\me.jpg"
+                src={me}
                 alt="Profile Image"
                 className="w-full h-full object-cover"
               />
@@ -47,7 +48,7 @@ const BioSection = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <a href="src/assets/files/safdar.pdf" download>
+              <a href="public/assets/Files/safdar.pdf" download>
                 See Full Resume
               </a>
             </motion.button>
